@@ -1,33 +1,33 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ProductsComponent } from './products/products.component';
-import { ProductDetailComponent } from './product-detail/product-detail.component';
-import { ProductAddComponent } from './product-add/product-add.component';
-import { ProductEditComponent } from './product-edit/product-edit.component';
+import { UsuariosComponent } from './Usuario/usuarios/usuarios.component';
+import { UsuarioDetailComponent } from './Usuario/usuario-detail/usuario-detail.component';
+import { UsuarioAddComponent } from './Usuario/usuario-add/usuario-add.component';
+import { UsuarioEditComponent } from './Usuario/usuario-edit/usuario-edit.component';
 
 const routes: Routes = [
   {
-    path: 'products',
-    component: ProductsComponent,
-    data: { title: 'List of Products' }
+    path: 'usuarios',
+    component: UsuariosComponent,
+    data: { title: 'Lista de Usuários' }
   },
   {
-    path: 'product-details/:id',
-    component: ProductDetailComponent,
-    data: { title: 'Product Details' }
+    path: 'usuario-details/:id',
+    component: UsuarioDetailComponent,
+    data: { title: 'Detalhes do Usuario' }
   },
   {
-    path: 'product-add',
-    component: ProductAddComponent,
-    data: { title: 'Add Product' }
+    path: 'usuario-add',
+    component: UsuarioAddComponent,
+    data: { title: 'Adicionar Usuario' }
   },
   {
-    path: 'product-edit/:id',
-    component: ProductEditComponent,
-    data: { title: 'Edit Product' }
+    path: 'usuario-edit/:id',
+    component: UsuarioEditComponent,
+    data: { title: 'Editar Usuario' }
   },
   { path: '',
-    redirectTo: '/products',
+    redirectTo: '/usuarios',
     pathMatch: 'full'
   }
 ];
